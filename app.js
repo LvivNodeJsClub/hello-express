@@ -19,8 +19,8 @@ app.use('/hello', helloRoute);
 app.use('/pizza', pizzaRoute);
 
 app.use(function (err, req, res, next) {
-    console.error(err.stack)
-    res.status(500).send('Something broke!');
+    //console.error(err.stack)
+    res.status(500).send(err.message);
 })
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+module.exports = app;

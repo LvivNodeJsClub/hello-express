@@ -1,10 +1,9 @@
-const config = require('../knexfile');
-const knex   = require('knex')(config);
+const knex = require('../knex');
 
 class PizzaService {
 
     save(pizza) {
-        return knex('pizza').insert(pizza);
+        return knex('pizza').insert(pizza, "*");
     }
 
     findAll() {
