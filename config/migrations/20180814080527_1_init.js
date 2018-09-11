@@ -2,7 +2,7 @@ exports.up = function(knex, Promise) {
     return knex.schema.createTable('pizza', (table) => {
         table.increments().primary();
         table.string('name').notNull();
-        table.timestamps();
+        table.timestamps(true, true);
         table.decimal('price', 8, 2).notNull();
         table.datetime('expiresAt').nullable();
         table.bool('isVegetarian').defaultsTo(false);

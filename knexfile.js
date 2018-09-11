@@ -7,7 +7,7 @@ module.exports = {
         version:    '7.2',
         connection: {
             user:     'postgres',
-            password: '',
+            password: 'cheese',
             host:     'localhost',
             port:     5432,
             database: 'pizza'
@@ -23,7 +23,7 @@ module.exports = {
         version:    '7.2',
         connection: {
             user:     'postgres',
-            password: '',
+            password: 'cheese',
             host:     'localhost',
             port:     5432,
             database: 'pizza_test'
@@ -31,6 +31,9 @@ module.exports = {
         migrations: {
             directory: 'config/migrations',
             tableName: 'migrations'
+        },
+        seeds: {
+            directory: __dirname + '/config/seeds/test'
         }
     },
 
