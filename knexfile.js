@@ -7,7 +7,7 @@ module.exports = {
         version:    '7.2',
         connection: {
             user:     'postgres',
-            password: 'cheese',
+            password: '',
             host:     'localhost',
             port:     5432,
             database: 'pizza'
@@ -23,7 +23,7 @@ module.exports = {
         version:    '7.2',
         connection: {
             user:     'postgres',
-            password: 'cheese',
+            password: '',
             host:     'localhost',
             port:     5432,
             database: 'pizza_test'
