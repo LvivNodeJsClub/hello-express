@@ -31,6 +31,9 @@ module.exports = {
         migrations: {
             directory: 'config/migrations',
             tableName: 'migrations'
+        },
+        seeds: {
+            directory: __dirname + '/config/seeds/test'
         }
     },
 
